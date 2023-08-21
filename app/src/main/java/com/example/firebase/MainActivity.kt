@@ -27,8 +27,8 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
-        binding.fab.setOnClickListener { view ->
-            throw RuntimeException("Test Crash")
+        binding.fab.setOnClickListener { _ ->
+            throw RuntimeException("Test Crash2.0")
         }
     }
 
